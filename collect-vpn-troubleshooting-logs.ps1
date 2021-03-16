@@ -18,7 +18,7 @@ function Login($subscriptioID)
 
 # $subscriptioID = Read-Host -Prompt 'What is the subscription ID you want to connect to? '
 $subscriptioID = $s
-#### Select-AzSubscription -SubscriptionId $subscriptioID # moet one - 005617a9-c067-4aee-a9ac-c48e1868216a
+#### Select-AzSubscription -SubscriptionId $subscriptioID
 Login($subscriptioID)
 #
 
