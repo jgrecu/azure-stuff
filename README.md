@@ -5,7 +5,10 @@ starting and stopping the
 VirtualGateway packet capture.
     eof    
 # azure-vpn-pcap
-chose either 
-./vpn-packet-capture.ps1 -s SubscriptionID -start & 
-./vpn-packet-capture.ps1 -s SubscriptionID -stop and 
-follow the instructions
+chose either:
+
+./vpn-packet-capture.ps1 -s SubscriptionID -start
+OR
+./vpn-packet-capture.ps1 -s SubscriptionID -stop
+
+and follow the instructions
