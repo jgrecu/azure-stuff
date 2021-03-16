@@ -6,9 +6,6 @@ VirtualGateway packet capture.
     eof    
 # azure-vpn-pcap
 chose either 
-test-START-vpn-capture.ps1 & 
-test-STOP-vpn-capture.ps1 and 
+./vpn-packet-capture.ps1 -s SubscriptionID -start & 
+./vpn-packet-capture.ps1 -s SubscriptionID -stop and 
 follow the instructions
-## CONTACTS :
-
-Slack Channel **#cos-cops-go-ops**
