@@ -28,8 +28,8 @@ function Start
     $filterchoice = Read-Host -Prompt 'Do you want to choose the filter (YES) / or go with the default all TCP (NO) ? (YES/NO) '
     if ($filterchoice -eq "YES") {
         Echo "`n`t-- Your answer was YES, lets create the filter for you!`n"
-        $srcIP = Read-Host -Prompt 'Please input the source (SAP side) IP/subnet in CIDR notation: '
-        $dstIP = Read-Host -Prompt 'Please input the destination (customer side) IP/subnet in CIDR notation: '
+        $srcIP = Read-Host -Prompt 'Please input the source (Azure side) IP/subnet in CIDR notation: '
+        $dstIP = Read-Host -Prompt 'Please input the destination (on-prem side) IP/subnet in CIDR notation: '
         $filter = "{`"TracingFlags`":11,`"MaxPacketBufferSize`":120,`"MaxFileSize`":500,`"Filters`":[{`"SourceSubnets`":[`"" + $srcIP +"`",`"" + $dstIP +"`"],`"DestinationSubnets`":[`"" + $dstIP +"`",`"" + $srcIP +"`"],`"TcpFlags`":-1,`"Protocol`":[6],`"CaptureSingleDirectionTrafficOnly`":false}]}"
         Echo "The filter is: "`t$filter`n
     }
