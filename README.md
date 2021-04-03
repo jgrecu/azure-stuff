@@ -1,6 +1,5 @@
 ## Purpose :
-    This repository holds the 
-powershell scripts for 
+    This repository holds the powershell scripts for 
 starting and stopping the 
 VirtualGateway packet capture.
     eof    
